@@ -14,7 +14,7 @@ Using API calls or from online data repositories such as Kaggle or data.world, g
 ## Steps:
 ### Extracting data
 Using at least two original data sources, gather the necessary information that is relevant to the project using either API calls or web scraping.
-### Sources
+#### Sources
 1. https://github.com/nytimes/covid-19-data
 2. https://covidtracking.com/data
 ### Transforming data
