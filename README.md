@@ -17,6 +17,7 @@ Using at least two original data sources, gather the necessary information that 
 #### Sources
 1. https://github.com/nytimes/covid-19-data
 2. https://covidtracking.com/data
+3. https://data.world/mgecmen/covid-19/workspace/file?filename=US+State+Population
 ### Transforming data
 Clean the raw data using python/pandas so as to be able to easily display on the dashboard.
 ### Loading the dashboard
