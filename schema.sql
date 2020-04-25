@@ -25,7 +25,13 @@ CREATE TABLE Final_COVID_Stats (
   death INT,
   total_tests INT,
   2019_pop INT,
-  pct_tested DOUBLE,
+  pct_tested FLOAT,
   tested_per_million FLOAT
-  FOREIGN KEY (state) REFERENCES US_State_Pop(state)
+  FOREIGN KEY (date) REFERENCES Daily_COVID_Stats(date),
+  FOREIGN KEY (state) REFERENCES Daily_COVID_Stats(state),
+  FOREIGN KEY (positive_tests) REFERENCES Daily_COVID_Stats(positive_tests),
+  FOREIGN KEY (total_tests) REFERENCES Daily_COVID_Stats(total_tests),
+  FOREIGN KEY (death) REFERENCES Daily_COVID_Stats(death),
+  FOREIGN KEY (name) REFERENCES US_State_Pop(name),
+  FOREIGN KEY (2019_pop) REFERENCES US_State_Pop(2019_pop)
 );
