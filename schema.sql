@@ -1,6 +1,6 @@
-DROP TABLE us_state_pop CASCADE;
-DROP TABLE daily_covid_stats CASCADE;
-DROP TABLE final_covid_stats;
+DROP TABLE IF EXISTS us_state_pop CASCADE;
+DROP TABLE IF EXISTS daily_covid_stats CASCADE;
+DROP TABLE IF EXISTS final_covid_stats;
 
 -- Create Three Tables
 CREATE TABLE us_state_pop (
@@ -14,7 +14,7 @@ CREATE TABLE daily_covid_stats (
   state varchar(2),
   positive_tests INT,
   total_tests INT,
-  deaths INT,
+  death INT,
   PRIMARY KEY (date, state),
   FOREIGN KEY (state) REFERENCES us_state_pop(state)
 );
