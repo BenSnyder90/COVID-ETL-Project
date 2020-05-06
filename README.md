@@ -23,4 +23,17 @@ The final version of the transformed data frame was initially saved into an easi
 
 ## Summary:
 Using freely available data on the internet, we have built a tool that provides day-to-day COVID testing data for each state within continental United States and Alaska. Using an easy to access dashboard, this data provides relevant information pertaining to the amount of testing that was done by each state which can be used to correlate against the extent of disease spread and mitigation efforts. While we chose to extract data from the first 8 weeks, our data source, www.covidtracking.com, provides daily updates for each state’s COVID-19 tracking. We could easily keep our databases up to date with current data.
-    Our created database provides a more informative dataset for the average user. They can use the postgreSQL database to query multiple sets of data. If they wanted to see how the total confirmed cases and deaths grew within a certain state as the outbreak continued, they could run a query. If they only wanted to see the most recent results for our dataset, they could filter by date. We wanted our database to contain some of the most sought-after information, such as the percentage of each state’s population that have been tested for COVID-19, and have it easily accessible via database queries and a downloadable CSV file.
+    Our created database provides a more informative dataset for the average user. They can use the postgreSQL database to query multiple sets of data. If they wanted to see how the total confirmed cases and deaths grew within a certain state as the outbreak continued, they could run a query.
+
+![state_data](/Output/state_test.PNG)
+
+If they only wanted to see the most recent percentage of population tested in each state for our dataset, they could filter by date.
+
+![pct_test](/Output/daily_pct_test.PNG)
+
+If they wanted to compare two states to see how COVID-19 is affecting each state differently, they could run a query like this:
+
+![comparison_test](/Output/state_comparison_test.PNG)
+
+
+We wanted our database to contain some of the most sought-after information, such as the percentage of each state’s population that have been tested for COVID-19, and have it easily accessible via database queries and a downloadable CSV file.
