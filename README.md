@@ -37,3 +37,8 @@ If they wanted to compare two states to see how COVID-19 is affecting each state
 
 
 We wanted our database to contain some of the most sought-after information, such as the percentage of each state’s population that have been tested for COVID-19, and have it easily accessible via database queries and a downloadable CSV file.
+
+
+
+### Gantt Chart
+![gantt_chart](/gantt_chart.PNG) 
